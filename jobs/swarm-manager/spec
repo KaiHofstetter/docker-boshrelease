@@ -17,6 +17,13 @@ consumes:
   type: docker-tcp
 
 properties:
+  tls_cacert:
+    description: "Trust only remotes providing a certificate signed by the CA given here, if tcp_address not 127.0.0.1"
+  tls_cert:
+    description: "TLS certificate file, if tcp_address not 127.0.0.1"
+  tls_key:
+    description: "TLS key file, if tcp_address not 127.0.0.1"
+
   debug:
     description: "Enable debug mode"
     default: false

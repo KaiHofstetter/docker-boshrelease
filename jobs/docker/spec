@@ -21,9 +21,6 @@ provides:
   type: docker-tcp
   properties:
   - tcp_port
-  - tls_cacert
-  - tls_cert
-  - tls_key
 
 properties:
   tcp_address:
